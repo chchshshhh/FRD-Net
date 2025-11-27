@@ -13,6 +13,11 @@ Our method, **FRD-Net**, is implemented on top of the **IMDL-BenCo** codebase, a
 ![Pipeline of FRD-Net](images/framework.png)
 ![Pipeline of FRD-Net](images/Grad-CAM.png)
 ---
+### Pre-trained Weights
+
+You can download the pre-trained **FRD-Net** weights from Google Drive:
+
+- [FRD-Net weights](https://drive.google.com/your_weights_link)
 
 ## 1. Repository Structure
 
