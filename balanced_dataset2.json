@@ -1,0 +1,66 @@
+// [
+
+//     [
+//         "JsonDataset",
+//         "/disk/csh/IMDLBenCo/train_data/CASIA_v2_manip.json"
+//     ],
+
+
+//     [
+//         "JsonDataset",
+//         "/disk/csh/IMDLBenCo/train_data/bcm_COCO.json"
+//     ],
+//     [
+//         "JsonDataset",
+//         "/disk/csh/IMDLBenCo/train_data/bcmc_COCO.json"
+//     ],
+//     [
+//         "JsonDataset",
+//         "/disk/csh/IMDLBenCo/train_data/sp_COCO.json"
+//     ],
+//         [
+//         "JsonDataset",
+//         "/disk/csh/IMDLBenCo/train_data/cm_COCO.json"
+//     ],
+//         [
+//         "JsonDataset",
+//         "/disk/csh/IMDLBenCo/train_data/IMD2020.json"
+//     ],
+
+//             [
+//         "JsonDataset",
+//         "/disk/csh/IMDLBenCo4/train_data/FantasticReality.json"
+//     ]
+//     ]
+
+[
+    [
+        "JsonDataset",
+        "/disk/csh/IMDLBenCo/train_data/CASIAv2_tp.json"
+    ],
+    [
+        "JsonDataset",
+        "/disk/csh/IMDLBenco/train_data/bcm_COCO_list.json"
+    ],
+    [
+        "JsonDataset",
+        "/disk/csh/IMDLBenco/train_data/bcmc_COCO_list.json"
+    ],
+    [
+        "JsonDataset",
+        "/disk/csh/IMDLBenco/train_data/sp_COCO_list.json"
+    ],
+        [
+        "JsonDataset",
+        "/disk/csh/IMDLBenco/train_data/cm_COCO_list.json"
+    ],
+        [
+        "JsonDataset",
+        "/disk/csh/IMDLBenCo/train_data/IMD2020full.json"
+    ],
+        [
+        "JsonDataset",
+        "/disk/csh/IMDLBenco/train_data/FantasticReality.json"
+    ]
+    ]
+

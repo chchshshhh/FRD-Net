@@ -1,0 +1,45 @@
+[
+
+    [
+        "JsonDataset",
+        "/disk/csh/IMDLBenCo/train_data/CASIA_v2_manip.json"
+    ],
+
+    [
+        "JsonDataset",
+        "/disk/csh/IMDLBenCo/train_data/CASIAv2auth.json"
+    ],
+    [
+        "JsonDataset",
+        "/disk/csh/IMDLBenCo/train_data/bcm_COCO.json"
+    ],
+    [
+        "JsonDataset",
+        "/disk/csh/IMDLBenCo/train_data/bcmc_COCO.json"
+    ],
+    [
+        "JsonDataset",
+        "/disk/csh/IMDLBenCo/train_data/sp_COCO.json"
+    ],
+        [
+        "JsonDataset",
+        "/disk/csh/IMDLBenCo/train_data/cm_COCO.json"
+    ],
+    [
+        "JsonDataset",
+        "/disk/csh/IMDLBenCo/train_data/compRAISE.json"
+    ],
+        [
+        "JsonDataset",
+        "/disk/csh/IMDLBenCo/train_data/IMD2020.json"
+    ],
+        [
+        "JsonDataset",
+        "/disk/csh/IMDLBenCo/train_data/FantasticReality_auth.json"
+    ],
+            [
+        "JsonDataset",
+        "/disk/csh/IMDLBenCo/train_data/FantasticReality_manip.json"
+    ]
+    ]
+

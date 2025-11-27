@@ -1,0 +1,11 @@
+{
+  "pairs1":"/disk/csh/IMDLBenCo4/test_data/pairs1.json",
+  "pairs2":"/disk/csh/IMDLBenCo4/test_data/pairs2.json",
+    "pairs3":"/disk/csh/IMDLBenCo4/test_data/pairs3.json",
+  "aaai": "/disk/csh/IMDLBenCo4/test_data/dir_tampered_pairs.json",
+           "aaai2": "/disk/csh/IMDLBenCo4/test_data/splicing_pairs.json",
+      "IMD2020": "/disk/csh/IMDLBenCo4/train_data/IMD2020full.json",
+   "defacto":"/disk/csh/IMDLBenCo4/test_data/DEFACTO12k-test_pairs.json"
+
+
+}
