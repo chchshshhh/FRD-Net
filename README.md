@@ -17,7 +17,7 @@ Our method, **FRD-Net**, is implemented on top of the **IMDL-BenCo** codebase, a
 
 You can download the pre-trained **FRD-Net** weights from Google Drive:
 
-- [FRD-Net weights](https://drive.google.com/file/d/1AXgeMKaECeTFeVsbCBrwhKyOOTJpzXKR/view?usp=sharing, https://docs.google.com/document/d/1ZJTKVAEFBLlmqIQ2_Dx4hZP6yl-ygYiQfuxxeQVo028/edit?usp=sharing, https://drive.google.com/file/d/1_5HH80Xy-ImfgeDlueMSoLyyDiT2HMtG/view?usp=sharing, https://drive.google.com/file/d/1bD0jaeHUf26EhY1aKT5bOx6HNh1-u6qy/view?usp=sharing, https://drive.google.com/drive/folders/1gdSCZOwl5cRQNZzS4c7DnbdSnVmE9U6g?usp=sharing, https://drive.google.com/drive/folders/1nbnhj77InmdI4o4XR_X1ZJzhHno4QOTR?usp=sharing, https://drive.google.com/drive/folders/1pVU0eC93zPg9oY7ebUKMP45VBgbCE-P5?usp=sharing, https://drive.google.com/drive/folders/1sKpyVjeinl8UeUnWv14nRVUAY9gA9I8V?usp=sharing, https://drive.google.com/drive/folders/1umDqNBdn5jKI5sHMjSkaTLqCewbNSPdl?usp=sharing, https://drive.google.com/drive/folders/1xU7eJnx93sjut0Sm-pTQaGw4XN4yCASI?usp=sharing, https://drive.google.com/file/d/1z-pRUkKLEaa1821I2QK_KykYcjLIR5JQ/view?usp=sharing)
+- [FRD-Net weights](https://drive.google.com/drive/folders/1ty47irsz7FOTjzVNzb6lR3u8wM9eSqaR?usp=sharing)
 
 ## 1. Repository Structure
 
@@ -210,9 +210,3 @@ And the IMDL-BenCo benchmark:
 ```
 
 
-
-## 9. Contact
-
-For questions about the code or experiments, please refer to the contact information provided in the main AAAI 2026 paper.
-
-```
