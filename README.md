@@ -180,33 +180,5 @@ torchrun \
 
 The evaluation computes pixel-level and image-level metrics (e.g. Pixel F1, Pixel AUC, Image F1, IoU) consistent with the results in the paper.
 
----
 
-
-## 6. Citation
-
-If you find this code useful in your research, please cite our paper and the IMDL-BenCo benchmark (once the final bibliographic information is available).
-A placeholder BibTeX entry for our AAAI 2026 paper:
-
-```bibtex
-@inproceedings{yourkey2026aaai_frdnet,
-  title     = {Amplifying Discrepancies: Exploiting Macro and Micro Inconsistencies for Image Manipulation Localization},
-  author    = {To be added},
-  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
-  year      = {2026}
-}
-```
-
-And the IMDL-BenCo benchmark:
-
-```bibtex
-@misc{ma2024imdlbenco,
-  title         = {IMDL-BenCo: A Comprehensive Benchmark and Codebase for Image Manipulation Detection \& Localization},
-  author        = {Xiaochen Ma and Xuekang Zhu and Lei Su and Bo Du and Zhuohang Jiang and Bingkui Tong and Zeyu Lei and Xinyu Yang and Chi-Man Pun and Jiancheng Lv and Jizhe Zhou},
-  year          = {2024},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.CV}
-}
-```
-
-
+To be updated.....
