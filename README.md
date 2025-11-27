@@ -48,11 +48,6 @@ At the top level:
   - `conda_requirements.txt`
   - `pip_requirement.txt`
 
-- `setup.py`, `MANIFEST.in`  
-  Packaging scripts for installing IMDL-BenCo/FRD-Net as a local Python package.
-
-- `LICENSE`  
-  License file (Creative Commons Attribution 4.0 International).
 
 ---
 
