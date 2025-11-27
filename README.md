@@ -10,6 +10,8 @@ This repository contains the code and configuration files used in our AAAI 2026 
 Our method, **FRD-Net**, is implemented on top of the **IMDL-BenCo** codebase, a comprehensive benchmark and framework for image manipulation detection and localization.
 
 
+![Pipeline of FRD-Net](images/IMDL_BenCo.png)
+
 ---
 
 ## 1. Repository Structure
@@ -79,8 +81,8 @@ To run on your machine:
 1. **Prepare datasets** used in the paper (e.g. CASIA v1/v2, IMD2020, FantasticReality, etc.) following the IMDL-BenCo format (JsonDataset / ManiDataset).
 2. **Update the JSON files** so that each path points to your local directory structure.
 
-   * `balanced_dataset.json`: training sets.(CAT-Net)
-   * `balanced_dataset2.json`: alternative training configuration.(IMDLBenCo)
+   * `balanced_dataset.json`: training sets.(CAT-Net Split a portion of the training set as the validation set.)
+   * `balanced_dataset2.json`: alternative training configuration.(IMDLBenCo Use the entire training set and test.)
    * `test_datasets.json`: evaluation sets for the main results.
 
 3. Make sure the JSON format is unchanged; only modify the file paths.
