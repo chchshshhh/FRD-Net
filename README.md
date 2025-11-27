@@ -79,10 +79,10 @@ To run on your machine:
 1. **Prepare datasets** used in the paper (e.g. CASIA v1/v2, IMD2020, FantasticReality, etc.) following the IMDL-BenCo format (JsonDataset / ManiDataset).
 2. **Update the JSON files** so that each path points to your local directory structure.
 
-   * `balanced_dataset.json`: training sets.
-   * `balanced_dataset2.json`: alternative training configuration.
+   * `balanced_dataset.json`: training sets.(CAT-Net)
+   * `balanced_dataset2.json`: alternative training configuration.(IMDLBenCo)
    * `test_datasets.json`: evaluation sets for the main results.
-   * (Optional) `test_rob.json`: datasets used in robustness experiments.
+
 3. Make sure the JSON format is unchanged; only modify the file paths.
 
 For more details on dataset formats, please refer to the IMDL-BenCo documentation.
