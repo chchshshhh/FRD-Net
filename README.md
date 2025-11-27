@@ -10,8 +10,8 @@ This repository contains the code and configuration files used in our AAAI 2026 
 Our method, **FRD-Net**, is implemented on top of the **IMDL-BenCo** codebase, a comprehensive benchmark and framework for image manipulation detection and localization.
 
 
-![Pipeline of FRD-Net](images/IMDL_BenCo.png)
-
+![Pipeline of FRD-Net](images/framework.png)
+![Pipeline of FRD-Net](images/Grad-CAM.png)
 ---
 
 ## 1. Repository Structure
