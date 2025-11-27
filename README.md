@@ -5,6 +5,8 @@ This repository contains the code and configuration files used in our AAAI 2026 
 
 > **“Amplifying Discrepancies: Exploiting Macro and Micro Inconsistencies for Image Manipulation Localization”**
 
+
+
 Our method, **FRD-Net**, is implemented on top of the **IMDL-BenCo** codebase, a comprehensive benchmark and framework for image manipulation detection and localization.
 
 
@@ -66,8 +68,6 @@ conda activate frdnet
 # Option B: install pip requirements directly
 pip install -r requirements/pip_requirement.txt
 
-# 3) Install IMDL-BenCo + FRD-Net as an editable package
-pip install -e .
 
 ## 3. Data Preparation
 
@@ -175,38 +175,8 @@ The evaluation computes pixel-level and image-level metrics (e.g. Pixel F1, Pixe
 
 ---
 
-## 6. Robustness Evaluation (Optional)
 
-For the robustness experiments (e.g. JPEG compression, noise, blur), we provide:
-
-* `test_robust.py` – main script to evaluate under different perturbations.
-* `test_rob.json` – example configuration listing robustness benchmark datasets.
-
-A typical usage pattern is:
-
-```bash
-torchrun \
-  --standalone \
-  --nnodes=1 \
-  --nproc_per_node=1 \
-  ./test_robust.py \
-    --model FRDNet_Main \
-    --pretrain_pth_path <path_to_mit_b2.pth> \
-    --world_size 1 \
-    --test_data_path <path_to_robust_benchmark_json_or_dir> \
-    --image_size 512 \
-    --if_resizing \
-    --edge_mask_width 7 \
-    --checkpoint_path <path_to_checkpoint_dir> \
-    --output_dir <output_dir> \
-    --log_dir <log_dir>
-```
-
-Please refer to the code in `test_robust.py` and `test_rob.json` to align the attack settings with the robustness experiments reported in the paper.
-
----
-
-## 7. Citation
+## 6. Citation
 
 If you find this code useful in your research, please cite our paper and the IMDL-BenCo benchmark (once the final bibliographic information is available).
 A placeholder BibTeX entry for our AAAI 2026 paper:
@@ -232,14 +202,7 @@ And the IMDL-BenCo benchmark:
 }
 ```
 
----
 
-## 8. License
-
-This project is released under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
-Please check the `LICENSE` file for details. Some third-party components may be subject to their own licenses.
-
----
 
 ## 9. Contact
 
