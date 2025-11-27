@@ -1,5 +1,5 @@
 # FRD-Net for Image Manipulation Localization  
-**AAAI 2026 – Amplifying Discrepancies: Exploiting Macro and Micro Inconsistencies for Image Manipulation Localization (Supplementary Material)**
+**AAAI 2026 – Amplifying Discrepancies: Exploiting Macro and Micro Inconsistencies for Image Manipulation Localization **
 
 This repository contains the code and configuration files used in our AAAI 2026 paper:
 
