@@ -74,7 +74,7 @@ conda activate frdnet
 #   You can manually install key libraries from there.
 # Option B: install pip requirements directly
 pip install -r requirements/pip_requirement.txt
-
+```
 
 ## 3. Data Preparation
 
@@ -120,5 +120,11 @@ bash runs/demo_test_FRDNet.sh
 
 The evaluation computes pixel-level and image-level metrics (e.g. Pixel F1, Pixel AUC, Image F1, IoU) consistent with the results in the paper.
 
+
+## Acknowledgement
+
+Our implementation is mainly built upon the following codebases. We gratefully thank the authors for their wonderful open-source contributions.
+
+[IMDLBenCo/](https://github.com/scu-zjz/IMDLBenCo), [FEC](https://github.com/guikunchen/FEC).
 
 To be updated.....
