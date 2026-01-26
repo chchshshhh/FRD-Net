@@ -17,7 +17,7 @@ Our method, **FRD-Net**, is implemented on top of the **IMDL-BenCo** codebase, a
 
 You can download the pre-trained **FRD-Net** weights from Google Drive:
 
-- [FRD-Net weights](https://drive.google.com/drive/folders/1ty47irsz7FOTjzVNzb6lR3u8wM9eSqaR?usp=sharing)
+- [FRD-Net weights and Grad-CAM result](https://drive.google.com/drive/folders/1ty47irsz7FOTjzVNzb6lR3u8wM9eSqaR?usp=sharing)
 
 ## 1. Repository Structure
 
@@ -104,45 +104,7 @@ The simplest way to start training is via the provided script:
 bash runs/demo_train_FRDNet.sh
 ```
 
-Before running, please edit `runs/demo_train_FRDNet.sh`:
 
-* `CUDA_VISIBLE_DEVICES`: set to the GPUs available on your machine.
-* `--pretrain_pth_path`: path to the backbone pre-trained weights (e.g. `mit_b2.pth`).
-* `--data_path`: path to your **training composition JSON**, e.g. `./balanced_dataset.json`.
-* `--test_data_path`: path to a validation/test dataset JSON (optional for validation during training).
-* `--output_dir`, `--log_dir`: directories for checkpoints and TensorBoard logs.
-
-The script internally runs:
-
-```bash
-torchrun \
-  --standalone \
-  --nnodes=1 \
-  --nproc_per_node=2 \
-  ./train_val.py \
-    --model FRDNet_Main \
-    --pretrain_pth_path <path_to_mit_b2.pth> \
-    --world_size 1 \
-    --batch_size 16 \
-    --data_path <path_to_training_json> \
-    --epochs 100 \
-    --lr 5e-5 \
-    --image_size 512 \
-    --if_resizing \
-    --min_lr 5e-7 \
-    --weight_decay 0.05 \
-    --edge_mask_width 7 \
-    --output_dir <output_dir> \
-    --log_dir <log_dir> \
-    --accum_iter 1 \
-    --seed 42 \
-    --test_period 1 \
-    --num_workers 8
-```
-
-You can adjust the batch size, learning rate, image size, and other hyperparameters according to your hardware.
-
----
 
 ## 5. Evaluation on Standard Benchmarks
 
@@ -154,29 +116,7 @@ The provided evaluation script:
 bash runs/demo_test_FRDNet.sh
 ```
 
-This script calls:
 
-```bash
-torchrun \
-  --standalone \
-  --nnodes=1 \
-  --nproc_per_node=1 \
-  ./test.py \
-    --model FRDNet_Main \
-    --pretrain_pth_path <path_to_mit_b2.pth> \
-    --world_size 1 \
-    --edge_mask 7 \
-    --test_data_json ./test_datasets.json \
-    --checkpoint_path <path_to_checkpoint_dir> \
-    --test_batch_size 1 \
-    --image_size 512 \
-    --if_resizing \
-    --output_dir <output_dir> \
-    --log_dir <log_dir>
-```
-
-* `test_datasets.json` defines multiple benchmarks (Columbia, COVER, CASIA, CocoGlide, NIST16, etc.).
-* `checkpoint_path` should contain the `.pth` checkpoint saved by `train_val.py`.
 
 The evaluation computes pixel-level and image-level metrics (e.g. Pixel F1, Pixel AUC, Image F1, IoU) consistent with the results in the paper.
 
