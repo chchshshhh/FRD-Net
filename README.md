@@ -9,6 +9,9 @@ This repository contains the code and configuration files used in our AAAI 2026 
 
 Our method, **FRD-Net**, is implemented on top of the **IMDL-BenCo** codebase, a comprehensive benchmark and framework for image manipulation detection and localization.
 
+- **Paper:** [AAAI Proceedings](https://ojs.aaai.org/index.php/AAAI/article/view/40844) / [DOI](https://doi.org/10.1609/aaai.v40i42.40844)
+- **Supplementary material:** [`docs/AAAI_2026_FRD_Net_sup.pdf`](docs/AAAI_2026_FRD_Net_sup.pdf)
+
 
 ![Pipeline of FRD-Net](images/framework.png)
 ![Pipeline of FRD-Net](images/Grad-CAM.png)
@@ -28,6 +31,9 @@ At the top level:
 
 - `IMDLBenCo/modules/backbones/FRDNet.py`  
   Implementation of **FRD-Net**, our backbone that exploits macro and micro inconsistencies.
+
+- `docs/`  
+  Supplementary material for the AAAI 2026 paper.
 
 - `runs/`  
   Shell scripts for running the main experiments:
@@ -127,4 +133,19 @@ Our implementation is mainly built upon the following codebases. We gratefully t
 
 [IMDLBenCo/](https://github.com/scu-zjz/IMDLBenCo), [FEC](https://github.com/guikunchen/FEC).
 
-To be updated.....
+## Citation
+
+If you find this work useful, please cite:
+
+```bibtex
+@article{chen2026amplifying,
+  title   = {Amplifying Discrepancies: Exploiting Macro and Micro Inconsistencies for Image Manipulation Localization},
+  author  = {Chen, Shenghao and Zhao, Yibo and Wang, Tianyi and Ma, Chunjie and Guan, Weili and Li, Ming and Gao, Zan},
+  journal = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume  = {40},
+  number  = {42},
+  pages   = {35357--35365},
+  year    = {2026},
+  doi     = {10.1609/aaai.v40i42.40844}
+}
+```
